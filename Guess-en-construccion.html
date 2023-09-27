@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="es-es">
+
+<head>
+  <vtex:contentPlaceHolder id="meta" />
+  <vtex:metaTags />
+  <vtex:template id="guess-meta-tags" />
+  <vtex:template id="guess-styles" />
+  <link rel="stylesheet" href="https://guessmx.vteximg.com.br/arquivos/css-js_styles.css?v=01092023-1600"
+    id="globalStyles">
+  <link rel="stylesheet" href="https://guessmx.vteximg.com.br/arquivos/baseAxo.min.css" />
+  <vtex:contentPlaceHolder id="page-styles" />
+  <vtex.cmc:fallback />
+</head>
+
+<style>
+  body {
+    background-color: #222222;
+  }
+
+  .en-mantenimiento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background-color: #222222;
+    font-family: futurapt-medium, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+  }
+
+  .white-text {
+    color: #fff;
+  }
+
+  .textContainer {
+    position: relative;
+    border-bottom: 2px solid;
+    text-align: left;
+    margin: 2em;
+  }
+
+  .textContainer img {
+    width: 30%;
+    height: auto;
+    text-align: left;
+    display: block;
+  }
+
+  .imageContainer {
+    display: block;
+    position: relative;
+  }
+
+  @media screen and (max-width:1023px) {
+    .en-mantenimiento {
+      flex-direction: column-reverse;
+
+    }
+
+    .imageContainer {
+      width: 100%;
+    }
+
+    .textContainer {
+      border: none;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+
+    .textContainer {
+      width: 60%;
+    }
+  }
+</style>
+
+<body>
+  <div class="en-mantenimiento">
+    <div class="textContainer white-text">
+      <img src="https://guessmx.vteximg.com.br/arquivos/mantenimiento-logo-270923.png" alt="" srcset="">
+      <h1 class="en-mantenimiento__title">
+        Lamentamos las molestias.<br /> Nos encontramos mejorando para ti, <br /> pronto estará el sitio disponible
+        nuevamente.
+      </h1>
+    </div>
+    <div class="imageContainer">
+      <picture class="en-mantenimiento__image">
+        <source srcset="
+        https://guessmx.vteximg.com.br/arquivos/270923-MANTENIMIENTO-IMAGEN-MOBILE.jpg
+          " media="(max-width: 1023px)" alt="En mantenimiento" />
+        <img src="https://guessmx.vteximg.com.br/arquivos/270923-MANTENIMIENTO-IMAGEN-DESK.jpg"
+          alt="En mantenimiento" />
+      </picture>
+    </div>
+</body>
+
+</html>
